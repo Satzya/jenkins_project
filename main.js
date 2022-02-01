@@ -4,12 +4,10 @@ const app = express()
 
 console.log('Jenkins Build');
 
-// app.get('/',(req,res)=>{
-//     setTimeout(() => {
-//         console.log('mjksss');
-//         res.send('klogopi')
-//     }, 4000);
-// })
+app.get('/',(req,res)=>{
+        console.log('mjksss');
+        res.send('klogopi')
+})
 
-// console.log('mjk');
-// app.listen(1000)
+console.log('mjk');
+app.listen(5050)
