@@ -3,10 +3,15 @@ pipeline {
     stages {
         stage('build') {
             steps {
-               cho "Build" 
+               echo "Build" 
             }
         }
         stage('test') {
+            when {
+                expression {
+                BRANCH_NAME == 'dev'
+                }
+            }
             steps {
                 echo "Test"
             }
