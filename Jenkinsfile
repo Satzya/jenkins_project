@@ -4,7 +4,9 @@ pipeline {
         stage('build') {
             steps {
                echo "Build"
-               bat "node --version"
+               bat "node"
+               bat "1+1"
+               bat "exit"
             }
         }
         stage('test') {
