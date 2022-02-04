@@ -5,8 +5,7 @@ pipeline {
             steps {
                echo "Build"
                bat "node"
-               bat "1+1"
-               bat "exit"
+               bat "date/t"
             }
         }
         stage('test') {
