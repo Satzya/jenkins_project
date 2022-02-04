@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                echo "Build"
-               dir
+               echo "PP"
             }
         }
         stage('test') {
