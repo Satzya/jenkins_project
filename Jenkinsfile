@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                echo "Build"
-               echo "PP"
+               bat "node --version"
             }
         }
         stage('test') {
