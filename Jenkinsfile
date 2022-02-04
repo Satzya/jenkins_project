@@ -4,9 +4,7 @@ pipeline {
         stage('build') {
             steps {
                echo "Build"
-                node
-                1+1
-                exit
+               dir
             }
         }
         stage('test') {
